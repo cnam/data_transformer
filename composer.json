@@ -1,5 +1,5 @@
 {
-    "name": "core/data_transformer",
+    "name": "core/data-transformer",
     "description": "Transform Data to Db from DB",
     "keywords": ["transformer", "database"],
     "require": {
