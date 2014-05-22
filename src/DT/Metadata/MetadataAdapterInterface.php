@@ -33,11 +33,4 @@ interface MetadataAdapterInterface
      * @return array
      */
     public function getFields();
-
-    /**
-     * Класс модели для связки
-     *
-     * @return string
-     */
-    public function getModelClass();
 }

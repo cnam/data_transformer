@@ -1,7 +1,8 @@
 <?php
 
-use DT\Metadata\MetadataAdapterInterface;
+namespace DT\Metadata\Adapter;
 
+use DT\Metadata\MetadataAdapterInterface;
 
 class ArrayAdapter implements MetadataAdapterInterface
 {
@@ -68,11 +69,5 @@ class ArrayAdapter implements MetadataAdapterInterface
     {
         $metadata = $this->getMetaData();
         return $metadata['fields'];
-    }
-
-    public function getModelClass()
-    {
-        $metadata = $this->getMetaData();
-        return $metadata['model'];
     }
 }

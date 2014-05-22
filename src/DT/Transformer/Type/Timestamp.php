@@ -19,6 +19,9 @@ class Timestamp implements TypeInterface
 
     public function decode($value)
     {
+        if (date_create_from_format(self::DATE_FORMAT, $value) == false) {
+            return time();
+        }
         return date_create_from_format(self::DATE_FORMAT, $value)->getTimestamp();
     }
 }

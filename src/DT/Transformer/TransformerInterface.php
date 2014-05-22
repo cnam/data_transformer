@@ -1,5 +1,7 @@
 <?php
 
+namespace DT\Transformer;
+
 use DT\Metadata\MetadataAdapterInterface;
 
 interface TransformerInterface

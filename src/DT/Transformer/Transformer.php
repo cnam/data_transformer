@@ -3,7 +3,6 @@
 namespace DT\Transformer;
 
 use DT\Metadata\MetadataAdapterInterface;
-use TransformerInterface;
 
 class Transformer implements TransformerInterface
 {
@@ -31,16 +30,16 @@ class Transformer implements TransformerInterface
      */
     public function encode($data, MetadataAdapterInterface $metaData, array $options = array())
     {
-        $data = array();
-
+        $data = array_merge($metaData->getDefaultValues(), $data);
         foreach ($metaData->getFields() as $name => $options) {
-            if (!array_key_exists($options['type'], $this->factory)) {
+            $type = strtolower($options['type']);
+            if (!array_key_exists($type, $this->factory)) {
                 throw new \Exception('Not corrected field type correct types: '.implode(',',array_keys($this->factory)));
             }
-            $data[$name] = $this->factory[$options['type']]->encode($data[$name]);
+            $data[$name] = $this->factory[$type]->encode($data[$name]);
         }
 
-        return array_merge($data, $metaData->getDefaultValues());
+        return $data;
     }
 
     /**
@@ -56,16 +55,14 @@ class Transformer implements TransformerInterface
      */
     public function decode($data, MetadataAdapterInterface $metaData, array $options = array())
     {
-        $data = array();
-
+        $data = array_merge($metaData->getDefaultValues(), $data);
         foreach ($metaData->getFields() as $name => $options) {
-            if (!array_key_exists($options['type'], $this->factory)) {
+            $type = strtolower($options['type']);
+            if (!array_key_exists($type, $this->factory)) {
                 throw new \Exception('Not corrected field type correct types: '.implode(',',array_keys($this->factory)));
             }
-            $data[$name] = $this->factory[$options['type']]->decode($data[$name]);
+            $data[$name] = $this->factory[$type]->decode($data[$name]);
         }
-
-        $data = array_merge($data, $metaData->getDefaultValues());
 
         return $data;
     }
