@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DT\Metadata;
+namespace CNM\Metadata;
 
 
 interface MetadataAdapterInterface

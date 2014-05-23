@@ -1,8 +1,8 @@
 <?php
 
-namespace DT\Transformer;
+namespace CNM\Transformer;
 
-use DT\Metadata\MetadataAdapterInterface;
+use CNM\Metadata\MetadataAdapterInterface;
 
 class Transformer implements TransformerInterface
 {
@@ -21,7 +21,7 @@ class Transformer implements TransformerInterface
      * Преобразовать значение для записи в хранилище
      *
      * @param array                                 $data
-     * @param \DT\Metadata\MetadataAdapterInterface $metaData
+     * @param \CNM\Metadata\MetadataAdapterInterface $metaData
      * @param array                                 $options
      *
      * @throws \Exception
@@ -46,7 +46,7 @@ class Transformer implements TransformerInterface
      * Преобразование полученное значение из хранилища
      *
      * @param array                                 $data
-     * @param \DT\Metadata\MetadataAdapterInterface $metaData
+     * @param \CNM\Metadata\MetadataAdapterInterface $metaData
      * @param array                                 $options
      *
      * @throws \Exception

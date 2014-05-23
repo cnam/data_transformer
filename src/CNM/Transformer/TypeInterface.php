@@ -1,6 +1,6 @@
 <?php
 
-namespace DT\Transformer;
+namespace CNM\Transformer;
 
 interface TypeInterface
 {

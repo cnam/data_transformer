@@ -1,8 +1,8 @@
 <?php
 
-namespace DT\Transformer;
+namespace CNM\Transformer;
 
-use DT\Metadata\MetadataAdapterInterface;
+use CNM\Metadata\MetadataAdapterInterface;
 
 interface TransformerInterface
 {

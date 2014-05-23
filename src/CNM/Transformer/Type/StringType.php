@@ -1,10 +1,10 @@
 <?php
 
 
-namespace DT\Transformer\Type;
+namespace CNM\Transformer\Type;
 
 
-use DT\Transformer\TypeInterface;
+use CNM\Transformer\TypeInterface;
 
 class StringType implements TypeInterface
 {

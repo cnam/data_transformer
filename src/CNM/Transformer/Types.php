@@ -1,9 +1,9 @@
 <?php
 
 
-namespace DT\Transformer;
+namespace CNM\Transformer;
 
-use DT\Transformer\Type;
+use CNM\Transformer\Type;
 
 final class Types
 {

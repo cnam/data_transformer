@@ -1,8 +1,8 @@
 <?php
 
-namespace DT\Metadata\Adapter;
+namespace CNM\Metadata\Adapter;
 
-use DT\Metadata\MetadataAdapterInterface;
+use CNM\Metadata\MetadataAdapterInterface;
 
 class ArrayAdapter implements MetadataAdapterInterface
 {

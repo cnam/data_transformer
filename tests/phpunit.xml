@@ -18,7 +18,7 @@
 
     <testsuites>
         <testsuite name="Data Transformer">
-            <directory>./DT</directory>
+            <directory>./CNM/Tests</directory>
         </testsuite>
     </testsuites>
 

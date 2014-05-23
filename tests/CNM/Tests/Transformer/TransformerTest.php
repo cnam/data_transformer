@@ -1,9 +1,10 @@
 <?php
+namespace CNM\Tests\Transformer;
 
-use DT\Transformer\Transformer;
-use DT\Metadata\Adapter\ArrayAdapter;
+use CNM\Transformer\Transformer;
+use CNM\Metadata\Adapter\ArrayAdapter;
 
-class TransformerTest extends PHPUnit_Framework_TestCase
+class TransformerTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var Transformer
@@ -12,7 +13,7 @@ class TransformerTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->transformer = new DT\Transformer\Transformer();
+        $this->transformer = new Transformer();
     }
 
     /**
