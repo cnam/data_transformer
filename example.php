@@ -1,8 +1,3 @@
-# Library for transformation data from php to sql DB and inverse
-
-# Usage
-
-```php
 <?php
 
 require_once __DIR__ ."/vendor/autoload.php";
@@ -40,17 +35,11 @@ $data = array(
 
 $encodedData = $transformer->encode($data, $adapter);
 
-```
+/**
+ * logic for inserting data to db
+ */
 
-logic for inserting data to db
-
-Get data from database
-
-```php
-
+/**
+ * Get data from db
+ */
 $decodeData = $transformer->decode($data, $adapter);
-
-```
-
-and usage data
-
