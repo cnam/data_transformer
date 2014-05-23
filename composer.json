@@ -3,8 +3,7 @@
     "description": "Transform Data to Db from DB",
     "keywords": ["transformer", "database"],
     "require": {
-        "php": ">=5.3.13",
-        "ext-pdo": "*"
+        "php": ">=5.3.13"
     },
     "require-dev": {
         "phpunit/phpunit": "4.1.*"
