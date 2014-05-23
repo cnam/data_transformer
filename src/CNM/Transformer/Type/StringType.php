@@ -1,8 +1,6 @@
 <?php
 
-
 namespace CNM\Transformer\Type;
-
 
 use CNM\Transformer\TypeInterface;
 

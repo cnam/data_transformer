@@ -4,6 +4,11 @@ namespace CNM\Transformer;
 
 use CNM\Metadata\MetadataAdapterInterface;
 
+/**
+ * Class Для преобразования данных из корректных для записи в базу в корректные для чтения php
+ *
+ * @package CNM\Transformer
+ */
 class Transformer implements TransformerInterface
 {
 

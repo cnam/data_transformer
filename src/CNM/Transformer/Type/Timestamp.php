@@ -1,11 +1,8 @@
 <?php
 
-
 namespace CNM\Transformer\Type;
 
-
 use CNM\Transformer\TypeInterface;
-use Exception;
 
 class Timestamp implements TypeInterface
 {
