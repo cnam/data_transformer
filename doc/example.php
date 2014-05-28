@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ ."/vendor/autoload.php";
+require_once __DIR__ . "/vendor/autoload.php";
 
 $transformer = new \CNM\Transformer\Transformer();
 
@@ -23,7 +23,7 @@ $metadata = array(
 );
 
 
-$adapter =  new \CNM\Metadata\Adapter\ArrayAdapter($metadata);
+$adapter =  new \CNM\Metadata\Driver\ArrayDriver($metadata);
 
 $data = array(
     'name' => 'Test Data Transformer',

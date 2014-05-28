@@ -4,7 +4,7 @@ namespace CNM\Metadata\Driver;
 
 use CNM\Metadata\MetadataDriverInterface;
 
-class ArrayAdapter implements MetadataDriverInterface
+class ArrayDriver implements MetadataDriverInterface
 {
     protected $metadata;
 
