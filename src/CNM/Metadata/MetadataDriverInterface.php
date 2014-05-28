@@ -4,7 +4,7 @@
 namespace CNM\Metadata;
 
 
-interface MetadataAdapterInterface
+interface MetadataDriverInterface
 {
     /**
      * Имя таблицы

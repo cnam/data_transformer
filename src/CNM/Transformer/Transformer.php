@@ -2,7 +2,7 @@
 
 namespace CNM\Transformer;
 
-use CNM\Metadata\MetadataAdapterInterface;
+use CNM\Metadata\MetadataDriverInterface;
 
 /**
  * Class Для преобразования данных из корректных для записи в базу в корректные для чтения php
@@ -26,14 +26,14 @@ class Transformer implements TransformerInterface
      * Преобразовать значение для записи в хранилище
      *
      * @param array                                 $data
-     * @param \CNM\Metadata\MetadataAdapterInterface $metaData
+     * @param \CNM\Metadata\MetadataDriverInterface $metaData
      * @param array                                 $options
      *
      * @throws \Exception
      *
      * @return mixed
      */
-    public function encode($data, MetadataAdapterInterface $metaData, array $options = array())
+    public function encode($data, MetadataDriverInterface $metaData, array $options = array())
     {
         $data = array_merge($metaData->getDefaultValues(), $data);
         foreach ($metaData->getFields() as $name => $options) {
@@ -51,14 +51,14 @@ class Transformer implements TransformerInterface
      * Преобразование полученное значение из хранилища
      *
      * @param array                                 $data
-     * @param \CNM\Metadata\MetadataAdapterInterface $metaData
+     * @param \CNM\Metadata\MetadataDriverInterface $metaData
      * @param array                                 $options
      *
      * @throws \Exception
      *
      * @return mixed
      */
-    public function decode($data, MetadataAdapterInterface $metaData, array $options = array())
+    public function decode($data, MetadataDriverInterface $metaData, array $options = array())
     {
         $data = array_merge($metaData->getDefaultValues(), $data);
         foreach ($metaData->getFields() as $name => $options) {

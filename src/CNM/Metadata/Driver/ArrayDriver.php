@@ -1,10 +1,10 @@
 <?php
 
-namespace CNM\Metadata\Adapter;
+namespace CNM\Metadata\Driver;
 
-use CNM\Metadata\MetadataAdapterInterface;
+use CNM\Metadata\MetadataDriverInterface;
 
-class ArrayAdapter implements MetadataAdapterInterface
+class ArrayAdapter implements MetadataDriverInterface
 {
     protected $metadata;
 
